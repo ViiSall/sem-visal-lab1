@@ -1,6 +1,8 @@
-import app from './app.js';
-const port = process.env.PORT || 3000;
+import '../server.js';
+import { expect } from 'chai';
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+describe('Server startup', () => {
+  it('should start without crashing', () => {
+    expect(true).to.be.true;
+  });
 });

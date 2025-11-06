@@ -1,6 +1,6 @@
-import request from 'supertest';
-import app from '../app.js';
-import { expect } from 'chai';
+const request = require('supertest');
+const app = require('../app');
+const { expect } = require('chai');
 
 describe('GET /', () => {
   it('should return Hello, GitHub Actions!', async () => {
@@ -9,3 +9,4 @@ describe('GET /', () => {
     expect(res.text).to.equal('Hello, GitHub Actions!');
   });
 });
+
